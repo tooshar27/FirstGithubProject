@@ -24,7 +24,7 @@ public class DatabaseConnection
             Connection conn = DriverManager.getConnection(url, user, password);
             System.out.println("Connected to the database successfully!");
             
-            String sql = " INSERT INTO students (sid, sname) VALUES (5, 'Tom')";
+            String sql = " INSERT INTO students (sid, sname) VALUES (9, 'Gudu')";
             PreparedStatement st = conn.prepareStatement(sql);
             st.executeUpdate();
             
@@ -38,9 +38,15 @@ public class DatabaseConnection
             
             String sql2 = "UPDATE students SET sname = ? WHERE sid = ?";
             PreparedStatement st1 = conn.prepareStatement(sql2);
-            st1.setString(1, "newemail@example.com");
+            st1.setString(1, "Tush");
             st1.setInt(2, 1);
             st1.executeUpdate();
+            
+            
+            String sql3 = "DELETE FROM students WHERE sid = ?";
+            PreparedStatement st2 = conn.prepareStatement(sql3);
+            st2.setInt(1, 5);
+            st2.executeUpdate();
 
             
             
