@@ -77,5 +77,10 @@
 	<classpathentry kind="lib" path="C:/Users/tusha/Downloads/selenium-java-4.40.0/selenium-chrome-driver-4.40.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/tusha/Downloads/selenium-java-4.40.0/selenium-chrome-driver-4.40.0-sources.jar"/>
 	<classpathentry kind="lib" path="C:/Users/tusha/Downloads/selenium-java-4.40.0/selenium-chromium-driver-4.40.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/tusha/Downloads/mysql-connector-j-9.5.0/mysql-connector-j-9.5.0/mysql-connector-j-9.5.0.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
